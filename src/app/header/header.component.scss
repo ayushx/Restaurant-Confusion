@@ -1,0 +1,23 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/scss/font-awesome.min.scss");
+
+$lt-gray: #ddd;
+$background-dark: rgb(102, 96, 14);
+$background-moredark:rgb(63, 60, 21);
+$background-light: rgb(233, 214, 108);
+$background-pale:  rgb(233, 214, 108);
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: $background-light ;
+    color:floralwhite;
+    min-height: 150px;
+}
+
+.active {
+    background: $background-moredark;
+}

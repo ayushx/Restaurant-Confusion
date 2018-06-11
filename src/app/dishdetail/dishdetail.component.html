@@ -1,0 +1,46 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+    
+<div fxLayoutx="row">
+
+<div style="float:left;width:50%;">
+    <div fxFlex *ngIf ="dish">
+        <md-card>
+          <md-card-header>
+            <md-card-title>
+              <h1>{{dish.name | uppercase}}</h1>
+            </md-card-title>
+          </md-card-header>
+             <img md-card-image src="{{dish.image}}"alt="{{dish.name}}">
+          <md-card-content>
+           <p>{{dish.description}}</p>
+           </md-card-content>
+           <md-card-actions>
+          <button md-button (click)="goBack()">BACK</button>   
+          <button md-button>LIKE</button>
+          <button md-button>SHARE</button>
+        </md-card-actions>
+        </md-card>
+      </div>
+</div>
+
+<div style="float:right;width:50%;"> 
+  <div style="padding:10px">
+   <md-list fxFlex>
+      <h1 padding="20px">Comments</h1>
+     <md-list-item *ngFor ="let select of dish.com" style="padding:20px">
+       <p md-line>
+          {{select.comment}}
+          <br>
+          rating {{select.rating}}<br>
+          --{{select.author}} {{select.date | date }} <br>
+       </p> 
+      </md-list-item>
+   </md-list>
+  </div> 
+</div>
+
+
+</div>
+</div> 

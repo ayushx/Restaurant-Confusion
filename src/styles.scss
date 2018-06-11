@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/scss/font-awesome.min.scss");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+// some basic resets 
+$lt-gray: #ddd;
+$background-dark: rgb(158, 116, 24);
+$background-light: rgb(236, 183, 113);
+$background-pale: rgb(241, 224, 176);
+$primary-color-dark:   rgb(122, 84, 35);
+$primary-color:        rgb(150, 107, 29);
+$primary-color-light:  #D1C4E9;
+$primary-color-text:   rgb(95, 92, 92);
+$accent-color:         #FFC107;
+$primary-text-color:   #212121;
+$secondary-text-color: #e59393;
+$divider-color:        #BDBDBD;
+
+
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: Roboto, sans-serif; 
+  
+}
+
+.container {
+  margin: 20px;
+  display:flex;
+}
+
+.background-primary {
+  background-color: $background-dark!important;
+}
+.background-accent {
+  background-color: $accent-color!important;
+}
+.text-floral-white {
+  color: floralwhite!important;
+}
+
+.flex-spacer {
+flex: 1 1 auto;
+}
